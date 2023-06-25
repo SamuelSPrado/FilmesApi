@@ -24,4 +24,9 @@ public class FilmeController : ControllerBase
         }
         
     }
+    [HttpGet]
+    public IEnumerable<Filme> RecuperaFilmes()
+    {
+        return filmes;
+    }
 }
