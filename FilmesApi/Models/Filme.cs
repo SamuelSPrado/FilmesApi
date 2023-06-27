@@ -6,6 +6,8 @@ namespace FilmesApi.Models;
 
 public class Filme
 {
+    public int Id { get; set; }
+
     [Required(ErrorMessage = "O título do filme é obrigatório")]
     [StringLength(50, MinimumLength = 3, ErrorMessage = "O título deve conter de 3 à 50 caracteres!")]
     public string Titulo { get; set; }
@@ -22,5 +24,5 @@ public class Filme
 
     [Required(ErrorMessage ="Necessário informar o ano de lançamento")]
     public int Ano { get; set; }
-
+    
 }
